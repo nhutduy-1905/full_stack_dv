@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+
+# Testing
+coverage/
+.nyc_output/
+
+# Next.js
+.next/
+out/
+build/
+*.rpt2_cache/
+.turbo/
+dist/
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pem
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prisma
+prisma/migrations/
+prisma/.env
+.prisma/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Docker
+.dockerignore
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backend specific
+backend/.env
+backend/dist/
+backend/node_modules/
+
+# Frontend specific (web)
+web/.env.local
+web/.next/
+web/node_modules/
+web/out/
+
+# Admin specific
+admin/.env.local
+admin/.next/
+admin/node_modules/
+admin/out/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+# System & IDE cache files (from user home directory)
+/.vscode/
+/.cursor/
+/.codex/
+/.codegpt/
+/.idea/
+.viminfo
+.node_repl_history
+.yarnrc
