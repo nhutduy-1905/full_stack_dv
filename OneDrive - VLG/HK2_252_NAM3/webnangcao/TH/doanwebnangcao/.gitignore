@@ -1,40 +1,60 @@
-# Dependencies
+# ============================================
+# Dependencies & Package Management
+# ============================================
 node_modules/
 .pnp
 .pnp.js
 package-lock.json
 yarn.lock
 
-# Testing
+# ============================================
+# Testing & Coverage
+# ============================================
 coverage/
 .nyc_output/
+.jest-cache
 
-# Next.js
+# ============================================
+# Build Outputs
+# ============================================
 .next/
 out/
 build/
-*.rpt2_cache/
-.turbo/
 dist/
+.turbo/
+*.rpt2_cache/
 
-# Misc
-.DS_Store
+# ============================================
+# Logs & Runtime Data
+# ============================================
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-.pem
-
-# Runtime data
 pids/
 *.pid
 *.seed
 *.pid.lock
 
-# IDE
+# ============================================
+# Environment & Secrets
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ============================================
+# IDE & Editor
+# ============================================
 .vscode/
 .idea/
+.cursor/
+.codex/
+.codegpt/
 *.swp
 *.swo
 *~
@@ -44,66 +64,70 @@ pids/
 *.launch
 .settings/
 *.sublime-workspace
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Prisma
-prisma/migrations/
-prisma/.env
-.prisma/
-
-# OS
-Thumbs.db
 .DS_Store
+Thumbs.db
+.viminfo
+.node_repl_history
 
-# Docker
-.dockerignore
+# ============================================
+# Database & ORM
+# ============================================
+prisma/migrations/
+.prisma/
+*.db
+*.sqlite
+*.sqlite3
 
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# Backend specific
+# ============================================
+# Backend Specific
+# ============================================
 backend/.env
 backend/dist/
 backend/node_modules/
+backend/.turbo/
 
-# Frontend specific (web)
+# ============================================
+# Frontend (Web) Specific
+# ============================================
 web/.env.local
 web/.next/
 web/node_modules/
 web/out/
+web/.turbo/
 
-# Admin specific
+# ============================================
+# Admin Dashboard Specific
+# ============================================
 admin/.env.local
 admin/.next/
 admin/node_modules/
 admin/out/
+admin/.turbo/
 
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Yarn
+# ============================================
+# Temporary & Cache Files
+# ============================================
+tmp/
+temp/
+*.tmp
+.cache/
 .yarn/cache/
 .yarn/unplugged/
 .yarn/build-state.yml
 .yarn/install-state.gz
+.npm/
+.eslintcache/
 .pnp.*
-# System & IDE cache files (from user home directory)
-/.vscode/
-/.cursor/
-/.codex/
-/.codegpt/
-/.idea/
-.viminfo
-.node_repl_history
+.next-env.d.ts
+
+# ============================================
+# OS Specific
+# ============================================
+.DS_Store
+Thumbs.db
+.dockerignore
+
+# ============================================
+# Local Development
+# ============================================
 .yarnrc
